@@ -1,0 +1,345 @@
+/* header css */
+header{
+    display: flex;
+    height: 14vh;
+    background-color: rgb(255, 255, 255);
+    padding-top: 40px;
+    font-weight: bold;
+}
+div ul{
+    list-style: none;
+    display: flex;
+}
+.ul1:first-child{
+    padding-left: 10px;
+}
+.ul1 li{
+    padding-left: 30px;
+    font-family: "Narnoor", serif;
+}
+.ul1 li:hover, div h3:hover, .login:hover{
+    color: #777777;
+}
+div h3{
+    padding-left: 190px;  
+}
+.ul2:first-child{
+    padding-left: 350px;
+}
+.ul2 span{
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 4px;
+    width: 4px;
+    background-color: #000000;
+    border-radius: 50%;
+    display: inline-block;
+} 
+#signup{
+    background-color: rgb(242, 242, 242);
+    margin-top: -14px;
+    padding: 14px;
+    border-radius: 6px;   
+}
+#signup:hover{
+    background-color: #e0e0e0;
+}
+.Hire{
+    color: white;
+    margin-left: 20px;
+    background-color: rgb(0, 0, 0);
+    margin-top: -14px;
+    padding: 14px;
+    border-radius: 6px;
+    height: 6.4vh;
+}
+.Hire:hover{
+    background-color: #5b5656d2;
+}
+/* video menu content css */
+#video-container{
+    margin-top: -1px;
+    width: 100%;
+    height: 76vh;
+}
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#menu{
+    display: flex;
+    justify-content: center;
+}
+#menu li{
+    position: relative;
+    margin-top: -517px;
+    list-style: none;
+    margin-bottom: 500px;
+    margin-right: 15px;
+    color: white;
+    background-color: rgba(0, 0, 0,0.5);
+    padding: 15px;
+    border-radius: 25px;
+}
+#menu li:hover{
+    background-color: white;
+    color: #000000;
+}
+#content{
+    margin-top: -440px;
+    color: white;
+}
+#content h1{
+    width: 450px;
+    text-align: center;
+    margin-left: 540px;
+}
+#content p{
+    width: 600px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 470px;
+}
+form{
+    margin-top: 45px;
+    justify-content: center;
+    display: flex;
+    
+}
+form input{
+    border: none;
+    width: 543px;
+    height: 59px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+input::placeholder{
+    color: rgb(170, 170, 170);
+}
+form label{
+    background-color: white;
+    color: rgb(170, 170, 170);
+    padding: 20px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+#ulli{
+    justify-content: center;
+    margin-top: 50px;
+    color: white;
+    padding: 5px;
+}
+:root{
+    --default-border-color:rgba(205, 205, 205, 0.821);
+    --hover-border-color:white;
+}
+#ulli li{
+    position: relative;
+    margin-left: 10px;
+    padding: 5px 10px;
+    margin-top: -5px;
+    border: 1px solid var(--default-border-color);
+    border-radius: 30px;
+    transition: border-color 0.3s;
+}
+#ulli li:hover{
+    border-color: var(--hover-border-color);
+}
+/* display designs css */
+.filter-controls{
+    margin-top: 120px;
+    margin-left: 70px;
+    margin-bottom: 30px;
+    position: relative;
+}
+#sort-option{
+    position: absolute;
+    z-index: 1000;
+    padding: 10px;
+    border-radius: 9px;
+    border: 1px solid #dedede;
+    color: #7a7a7a;
+}
+#sort-option:hover{
+    border: 3px solid rgb(255, 224, 229);
+}
+#op1, #op2{
+    margin: 20px;
+}
+.media-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: start;
+    margin-top: 190px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.media-item{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 5px;
+}
+.media{
+    object-fit: cover;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    border-radius: 10px;
+    position: relative;
+}
+.media:hover{
+    opacity: 0.8s;
+}
+.image, .video{
+    width: 300px;
+    height: 227px;
+}
+.image span{
+    display: flex;
+    margin-top: -70px;
+}
+.description{
+    display: flex;
+    margin-top: 10px;
+}
+.description img {
+    width: 25px;
+    margin-right: 5px;
+    margin-top: -3px;
+    border-radius: 50px;
+}
+.description span{
+    margin-left: 10px;
+    background-color: #bbbbbb;
+    color: white;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: small;
+}
+.description i{
+    margin-left: 9px;
+    color: #bbbbbb;
+}
+.description span:hover{
+    background-color: #EA4C89;
+} 
+.description i:hover{
+    color: #EA4C89;
+}
+.name{
+position: absolute;
+opacity: 0;
+margin-top: 170px;
+margin-left: 20px;
+color: white;
+}
+.name span{
+    margin-left: 30px;
+    color: #000000;
+}
+.name span i{
+    margin-left: 30px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.name:hover{
+    opacity: 1;
+}
+/* sign up & sign in css */
+#sign-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+#sign-container a{
+    text-decoration: none;
+    color: #000000;
+}
+#sign-container #up{
+    background-color: #EA4C89;
+    padding: 10px 40px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    margin-right: 40px;
+}
+#sign-container #up:hover{
+    background-color: rgb(228, 136, 167);
+}
+#sign-container #in{
+    background-color: white;
+    border: none;
+    padding: 10px;
+}
+/* all links of website css */
+#part3{
+    margin-top: 90px;
+    margin-left: 70px;
+    display: flex;
+    height: 55vh;
+}
+#part3 .drib-link{
+    width: 260px;
+}
+.drib-link h2{
+    color: #EA4C89;
+}
+.drib-link h2:hover{
+    color: #dc266c;
+}
+.drib-link h2,p,.dribspan{
+    margin-bottom: 25px;
+}
+.dribspan i{
+    padding-right: 15px;
+}
+.dribspan i:hover{
+    color:  #e74281;
+}
+.links-container{
+    display: flex;
+    margin-left: 10px;
+}
+.links-column{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 25px;
+}
+.links-column div, a{
+    padding-bottom: 15px;
+}
+.links-column a{
+    text-decoration: none;
+    color: #2e2e2e;
+}
+.links-column .link-heading{
+    font-weight: bold;
+}
+/* line css */
+.horizonline{
+    border-top: 1px solid rgb(216, 216, 216);
+    margin: 0px 70px;
+}
+/* copyright css */
+footer{
+    margin: 50px 70px;
+    display: flex;
+    justify-content: space-between;
+}
+footer div{
+    color: #606060;
+}
+footer span{
+    color: #606060;
+}
+footer span b{
+    color: #000000;
+}
+footer span i{
+    color: #EA4C89;
+    font-size: 25px;
+}

@@ -1,0 +1,181 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dribbble 2</title>
+    <!-- fonts used -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Narnoor&display=swap" rel="stylesheet">
+    <!-- icons used -->
+    <script src="https://kit.fontawesome.com/a874721e15.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a874721e15.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/dribbble.css">
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header content -->
+    <header id="header">      
+        <div>
+            <ul class="ul1">
+                <li>For talent</li>
+                <li>For designers</li>
+                <li>Inspiration</li>
+                <li>Learn design</li>
+                <li>Go Pro</li>
+            </ul>
+        </div>
+        <div><h3>dribbble</h3></div>
+        <div>
+            <ul class="ul2">
+                <li class="login">Log in</li>
+                <li><span class="dot"></span></li>
+                <li id="signup">Sign up</li>
+            </ul>
+        </div>
+        <div class="Hire">Hire Creatives</div>
+    </header>
+    <!-- Bg video for menu content -->
+    <div id="video-container">
+        <video autoplay muted loop playsinline> <source src="./videos/a.mp4" type="video/mp4"></video>
+    </div>
+    <!-- Menu items -->
+    <ul id="menu">
+        <li onclick="changeContent('Discover')">Discover</li>
+        <li onclick="changeContent('Animation')">Animation</li>
+        <li onclick="changeContent('Branding')">Branding</li>
+        <li onclick="changeContent('Illustration')">Illustration</li>
+        <li onclick="changeContent('Mobile')">Mobile</li>
+        <li onclick="changeContent('Print')">Print</li>
+        <li onclick="changeContent('Product Design')">Product Design</li>
+        <li onclick="changeContent('Typography')">Typography</li>
+        <li onclick="changeContent('Web Design')">Web Design</li>
+    </ul>
+    <!-- h1, p content -->
+    <div id="content-container">
+        <div id="content">
+            <h1 id="content-heading">Explore the worlds leading design portfolios</h1>
+            <p>Millions of designers and agencies around the world showcase their portfolio work on Dribbble - the home to the world's best design and creative professionals.</p>
+        </div>                    
+    </div>
+    <!-- search -->
+    <form action="search">
+        <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+        <input id="search" type="search" placeholder="Search...">
+    </form>
+    <!-- top search history -->
+    <div id="content-container1">
+        <div id="content1">
+            <ul id="ulli"> Trending searches
+                <li>landing page</li>
+                <li>ios</li>
+                <li>food</li>
+                <li>landingpage</li>
+                <li>uxdesign</li>
+                <li>app design</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Filtered designs display -->
+    <div class="filter-controls">
+        <select id="sort-option">
+            <option id="op1" value="New&Networthy">New&Networthy</option>
+            <option id="op2" value="Popular">Popular</option>
+        </select>
+    </div>
+    <div class="media-grid">
+                        <!-- design images will be dynamically added here -->
+    </div>
+    <!-- sign in/ sign up to continue bottons -->
+    <span id="sign-container">
+        <a id="up" href="#">sign up to continue</a>
+        <a id="in" href="#">or sign in</a>
+    </span>
+    <!-- footer links content  -->
+    <div id="part3">
+        <div class="drib-link">
+            <h2>dribbble</h2>
+            <p>Dribbble is the world's leading community for creaters to share, grow, and get hired.</p>
+            <span class="dribspan">
+                <i class="fa-brands fa-dribbble"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-pinterest"></i>
+            </span>
+        </div>
+
+        <div class="links-container">
+        <div class="links-column">
+            <div class="link-heading">For Designers</div>
+            <a class="link" href="#">Explore design work</a>
+            <a class="link" href="#">Design blog</a>
+            <a class="link" href="#">Overtime podcast</a>
+            <a class="link" href="#">Playoffs</a>
+            <a class="link" href="#">Code of conduct</a>
+        </div>
+
+        <div class="links-column">
+            <div class="link-heading">Hire designers</div>
+            <a class="link" href="#">Post a job opening</a>
+            <a class="link" href="#">Post a frelance project</a>
+            <a class="link" href="#">Search for designers</a>
+            <div class="link-heading">Brands</div>
+            <a class="link" href="#">Advertise with us</a>
+        </div>
+
+        <div class="links-column">
+            <div class="link-heading">Company</div>
+                <a class="link" href="#">About</a>
+                <a class="link" href="#">Careers</a>
+                <a class="link" href="#">Support</a>
+                <a class="link" href="#">Media kit</a>
+                <a class="link" href="#">Testimonials</a>
+                <a class="link" href="#">API</a>
+                <a class="link" href="#">Terms of service</a>
+                <a class="link" href="#">Privacy policy</a>
+                <a class="link" href="#">Cookie policy</a>
+        </div>
+
+        <div class="links-column">
+            <div class="link-heading">Directories</div>
+                <a class="link" href="#">Design jobs</a>
+                <a class="link" href="#">Designers for hire</a>
+                <a class="link" href="#">Freelance designers for hire</a>
+                <a class="link" href="#">Tags</a>
+                <a class="link" href="#">Places</a>
+            <div class="link-heading">Design assets</div>
+                <a class="link" href="#">Creative Market</a>
+                <a class="link" href="#">Fontspring</a>
+                <a class="link" href="#">Font Squirrel</a>
+        </div>
+
+        <div class="links-column">
+            <div class="link-heading">Design Resources</div>
+                <a class="link" href="#">Freelancing</a>
+                <a class="link" href="#">Design Hiring</a>
+                <a class="link" href="#">Design Portfolio</a>
+                <a class="link" href="#">Design Education</a>
+                <a class="link" href="#">Creative Process</a>
+                <a class="link" href="#">Design Industry Trends</a>
+        </div>
+        </div>
+    </div>
+<!-- copyright footer content -->
+    <div class="horizonline"></div>
+
+    <footer>
+        <div>© 2023 Dribbble. All rights reserved.</div>
+        <span><b>22,324,318</b> shots dribbbled <i class="fa-brands fa-dribbble"></i></span>
+    </footer>
+<!-- java script -->
+    <script src="./script.js"></script>
+              
+</body>
+</html>
